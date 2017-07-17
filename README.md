@@ -24,7 +24,7 @@ Both files download unzipped pages into pageviews/ and then the english parts to
 ##  How to run the web app locally on a Mac.
 
 1. Clone the [WikiTrends github repo](https://github.com/cristinabuenahora/WikiTrends)
-2. The WikiTrends web app requires Node.js.  You can install Node.js using a package management system for your Mac like Homebrew
+2. The WikiTrends web app requires Node.js.  You can download Node.js from https://nodejs.org/en/ (it's usually better to choose the version that is recommended for most user). Or, you can install Node.js using a package management system for your Mac like Homebrew
 * To install Homebrew follow the steps on the [How to Install Homebrew](https://treehouse.github.io/installation-guides/mac/homebrew) on a Mac instruction guide to install Homebrew.
 * Open the Terminal app and type `brew update`. This updates Homebrew with a list of the latest version of Node.
 * Type `brew install node.`
@@ -41,13 +41,8 @@ Both files download unzipped pages into pageviews/ and then the english parts to
 
 ##  How to get and process the current page views
 
-1. Change directories to WikiTrends/backend Make the download scripts in
+1. Change directories to WikiTrends/backend Make the scripts in the folder executable by:
 * chmod u+x *.sh
-
-WebApp:
-Download Node.js from https://nodejs.org/en/ (choose the version that is recommended for most user -- usually
-To run webapp on localhost8080: node app.js
-- Make sure node and express are installed
 
 Process:
 1. Use dictMaker.py to create a file with pagename '\t' count1 count2 ..... 

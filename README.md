@@ -39,9 +39,14 @@ Both files download unzipped pages into pageviews/ and then the english parts to
 4. After that you can change directories to WikiTrends/webapp and run the terminal command `node app.js`.  You should see a message saying "App listening on port 8000".  If you get an error about a missing package, then it may be resolved by running npm install again with the package name.
 5. Point your web browser to http://localhost:8000/now  There you should see the WikiTrends web app using example data from some time ago.
 
+## How to update data in the webpage
+* backend/hourly.sh is the key script for updating the counts and finding spikes hourly
+* it requires however, the past 2 weeks Wikipedia pageviews counts. 
+
 ##  How to get and process the current page views
 
-1. Change directories to WikiTrends/backend Make the scripts in the folder executable by:
+
+Change directories to WikiTrends/backend Make the scripts in the folder executable by:
 * chmod u+x *.sh
 
 Process:

@@ -15,6 +15,7 @@ def main():
   currHour = 0
   dayCount = {}
   # iterate through the files in directory
+  # this is an issue -- this assumes that the files in the dictionary are in a certain order, but they are not
   for filename in os.listdir(sys.argv[1]):
     if currHour != 23:
       currHour += 1

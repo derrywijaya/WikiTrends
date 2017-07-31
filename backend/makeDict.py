@@ -16,7 +16,11 @@ def main():
   dayCount = {}
   # iterate through the files in directory
   # this is an issue -- this assumes that the files in the dictionary are in a certain order, but they are not
-  for filename in os.listdir(sys.argv[1]):
+  
+  #for filename in os.listdir(sys.argv[1]):
+  
+  #for filename in sorted(os.listdir(sys.argv[1])), key=os.path.getctime):
+  for filename in sorted(os.listdir(sys.argv[1]), key=lambda f: os.path.getctime("{}/{}".format(sys.argv[1], f))):
     if currHour != 23:
       currHour += 1
       f = open(sys.argv[1] + "/" + filename)
